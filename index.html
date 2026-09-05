@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VOID BURGER</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">VOID<span>.</span></a>
+
+        <nav>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <button id="cartButton" class="cart-button">
+            🛒 <span id="cartCount">0</span>
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">// BURGER • FRIES • CHAOS</p>
+
+                <h1>
+                    BURGER<br>
+                    <span>FROM THE VOID.</span>
+                </h1>
+
+                <p>
+                    Hambúrguer artesanal para quem cansou
+                    do mesmo lanche de sempre.
+                </p>
+
+                <a href="#cardapio" class="btn">
+                    Ver cardápio ↓
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARDÁPIO -->
+
+        <section id="cardapio" class="menu-section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="eyebrow">// MENU</p>
+                    <h2>Escolha seu caos.</h2>
+                </div>
+
+            </div>
+
+
+            <div class="categories">
+
+                <button class="category active" data-category="todos">
+                    Todos
+                </button>
+
+                <button class="category" data-category="burgers">
+                    Burgers
+                </button>
+
+                <button class="category" data-category="porcoes">
+                    Porções
+                </button>
+
+                <button class="category" data-category="bebidas">
+                    Bebidas
+                </button>
+
+            </div>
+
+
+            <div id="products" class="products">
+
+                <!-- JAVASCRIPT VAI INSERIR OS PRODUTOS AQUI -->
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section id="sobre" class="about">
+
+            <p class="eyebrow">// THE VOID</p>
+
+            <h2>
+                Não fazemos<br>
+                hambúrguer normal.
+            </h2>
+
+            <p>
+                A VOID nasceu da vontade de criar uma experiência
+                diferente. Ingredientes simples, combinações absurdas
+                e muito sabor.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- CARRINHO -->
+
+    <div id="cartOverlay" class="overlay"></div>
+
+    <aside id="cart" class="cart">
+
+        <div class="cart-header">
+
+            <h2>Seu pedido</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+                Seu carrinho está vazio.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="total">
+                <span>Total</span>
+                <strong id="cartTotal">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <button id="checkout" class="checkout">
+                Finalizar pelo WhatsApp
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <footer>
+
+        <p>
+            VOID BURGER © 2026
+        </p>
+
+        <p>
+            Made for hungry humans.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
